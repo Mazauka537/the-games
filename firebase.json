@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "the-games-best",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

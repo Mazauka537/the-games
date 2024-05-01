@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: sans-serif;
+}
+
+.body__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.screen {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+.levels {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bg.png');
+}
+.player {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  width: 66px;
+  height: 103px;
+  background-image: url('../images/man_default.png');
+  background-position: 0 0;
+  background-size: 100%;
+  z-index: 100;
+}
+.h-flip {
+  transform: rotateY(180deg);
+}
+.animation-move {
+  background-image: url('../images/man.png');
+  background-size: 200%;
+  animation: player_move 0.5s infinite steps(1);
+}
+.level {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-image: url('../images/bg.png');
+  background-size: cover;
+}
+.item {
+  position: absolute;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+.rock {
+  background-image: url('../images/kamen.png');
+}
+.banan {
+  background-image: url('../images/banan.png');
+}
+.grass {
+  background-image: url('../images/grass.png');
+  background-position: 0 0;
+  background-size: 200%;
+  animation: player_move 0.5s infinite steps(1);
+}
+.grape {
+  background-image: url('../images/vinograd.png');
+}
+.interface {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.score {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: yellowgreen;
+  font-size: 30px;
+  font-weight: 900;
+}
+.alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 103;
+}
+.alert__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 360px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 900;
+  border: 2px solid #000;
+  background: crimson;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+}
+.text {
+  width: 100%;
+  color: #FFF;
+}
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 6px 15px;
+  font-size: 20px;
+  background: #007dd1;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background: #0064a7;
+}
+.buttons {
+  
+}
+.buttons button, .buttons div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: 102;
+  background: none;
+  border: none;
+  background-size: cover;
+  cursor: pointer;
+}
+#btn-mute {
+  left: 20px;
+  bottom: 20px;
+  z-index: 104;
+  background-image: url('../images/sound_on.png');
+}
+#btn-pause {
+  left: 90px;
+  bottom: 20px;
+  background-image: url('../images/pause.png');
+}
+#btn-right {
+  right: 20px;
+  bottom: 20px;
+  background-image: url('../images/right.png');
+}
+#btn-down {
+  right: 90px;
+  bottom: 20px;
+  background-image: url('../images/down.png');
+}
+#btn-up {
+  right: 90px;
+  bottom: 90px;
+  background-image: url('../images/up.png');
+}
+#btn-left {
+  right: 160px;
+  bottom: 20px;
+  background-image: url('../images/left.png');
+}
+@keyframes player_move {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}

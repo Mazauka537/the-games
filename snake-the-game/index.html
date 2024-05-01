@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Snake | THE GAMES</title>
+</head>
+<body>
+
+<canvas class="canvas" id="canvas"></canvas>
+
+<div class="interface" id="interface">
+    <div class="screen home-screen" id="home-screen">
+        <div class="screen__content">
+            <div class="title">Welcome to Snake The Game!</div>
+            <ul class="buttons">
+                <li>
+                    <button class="btn start-btn" id="start-btn">Start</button>
+                </li>
+                <li>
+                    <button class="btn settings-btn" id="settings-btn">Settings</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="screen crash-screen" id="crash-screen" style="display: none">
+        <div class="screen__content">
+            <div class="title">Game Over!</div>
+            <ul class="buttons">
+                <li>
+                    <button class="btn retry-btn" id="retry-btn">Retry</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="screen settings-screen" id="settings-screen" style="display: none">
+        <div class="screen__content">
+            <div class="title">Settings</div>
+            <ul class="buttons">
+                <li class="setting-line">
+                    <button class="setting difficulty" id="difficulty">
+                        Difficulty: <span class="difficulty-value" id="difficulty-value">Medium</span>
+                    </button>
+                </li>
+                <li class="setting-line">
+                    <button class="setting mute" id="mute">
+                        Sounds: <span class="mute-value" id="mute-value">ON</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn confirm-settings-btn" id="confirm-settings-btn">Confirm</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="dark-screen" id="dark-screen" style="visibility: hidden"></div>
+
+
+<script src="js/buzz.min.js"></script>
+<script src="js/Snake.js"></script>
+<script src="js/Game.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

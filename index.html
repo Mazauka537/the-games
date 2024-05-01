@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Главная | THE GAMES</title>
+    <meta name="keywords"
+          content="игры, игры на двоих, games, flesh games, флеш игры"/>
+    <meta name="description" content="Подборка лучших игр интернета! Тут собраны такие игры как змейка, flappy bird, не пакман, и многие другие, заходи и играй онлайн бесплатно и без смс"/>
+    <link rel="icon" type="image/png" href="assets/logo.png"/>
+    <meta name="theme-color" content="#333333"/>
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://the-games-best.web.app/"/>
+    <meta property="og:title" content="Главная | THE GAMES"/>
+    <meta property="og:description"
+          content="Подборка лучших игр интернета! Тут собраны такие игры как змейка, flappy bird, не пакман, и многие другие, заоди и играй онлайн бесплатно и без смс"/>
+    <meta property="og:image" content="https://the-games-best.web.app/assets/the-games.jpg"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDFTErIF7o1av9vkUj5mXu3DLkl4iucT0w",
+            authDomain: "thegames-ffd01.firebaseapp.com",
+            projectId: "thegames-ffd01",
+            storageBucket: "thegames-ffd01.appspot.com",
+            messagingSenderId: "335638512718",
+            appId: "1:335638512718:web:e1cd6a7f59c9561c506f1f",
+            measurementId: "G-ZMY3Z99MHQ"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+</head>
+<body>
+
+<h1 class="title">The Games</h1>
+
+<div id="games">
+
+    <article class="game-item">
+        <a class="game-item__image" href="/not-packman-the-game">
+            <img src="/assets/previews/not-packman-the-game.jpg" alt="game preview" loading="lazy">
+        </a>
+        <div class="game-item__body">
+            <h2 class="game-item__title">
+                Not Packman
+            </h2>
+            <p class="game-item__description">
+                В этой игре вам нужно убегать от злых точек, что так и хотят поймать вас и укусить...
+                Играть можно вдвоем или одному. Управление осуществляется с помощью клавиш w/a/s/d или
+                стрелочек на клавиатуре.
+            </p>
+        </div>
+        <div class="game-item__play">
+            <a class="game-item__play-btn" href="/not-packman-the-game">Играть</a>
+        </div>
+    </article>
+
+    <article class="game-item">
+        <a class="game-item__image" href="/flappy-bird-the-game">
+            <img src="/assets/previews/flappy-bird-the-game.jpg" alt="game preview" loading="lazy">
+        </a>
+        <div class="game-item__body">
+            <h2 class="game-item__title">
+                Flappy bird
+            </h2>
+            <p class="game-item__description">
+                Клон популярной игры "flappy bird" где нужно просто продержаться как можно дольше,
+                не врезаясь в трубы, появляющиеся на пути летящей птички. Управление птичкой
+                осуществляется за счет тапа по экрану.
+            </p>
+        </div>
+        <div class="game-item__play">
+            <a class="game-item__play-btn" href="/flappy-bird-the-game">Играть</a>
+        </div>
+    </article>
+
+    <article class="game-item">
+        <a class="game-item__image" href="/snake-the-game">
+            <img src="/assets/previews/snake-the-game.jpg" alt="game preview" loading="lazy">
+        </a>
+        <div class="game-item__body">
+            <h2 class="game-item__title">
+                Snake
+            </h2>
+            <p class="game-item__description">
+                Классическая змейка, собирай фрукты и не врежься в препятствия, коим ты, в том числе,
+                и являешься. Управление за счет клавиш w/a/s/d на клавиатуре.
+            </p>
+        </div>
+        <div class="game-item__play">
+            <a class="game-item__play-btn" href="/snake-the-game">Играть</a>
+        </div>
+    </article>
+
+    <article class="game-item">
+        <a class="game-item__image" href="/alians-the-game">
+            <img src="/assets/previews/alians-the-game.jpg" alt="game preview" loading="lazy">
+        </a>
+        <div class="game-item__body">
+            <h2 class="game-item__title">
+                Alians
+            </h2>
+            <p class="game-item__description">
+                На землю напали инопланетяне! Твоя задача уничтожить как можно больше НЛО, не задень при этом мирных
+                существ и не попадись сам. И не забывай перезаряжаться! Управление за счет стрелочек на клавиатуре,
+                стрельба на "пробел", перезарядка на клавишу "R".
+            </p>
+        </div>
+        <div class="game-item__play">
+            <a class="game-item__play-btn" href="/alians-the-game">Играть</a>
+        </div>
+    </article>
+
+    <article class="game-item">
+        <a class="game-item__image" href="/samolet-the-game">
+            <img src="/assets/previews/samolet-the-game.jpg" alt="game preview" loading="lazy">
+        </a>
+        <div class="game-item__body">
+            <h2 class="game-item__title">
+                Samolet
+            </h2>
+            <p class="game-item__description">
+                Ты простой пилот, с ограниченным запасом топлива. Лети как можно дольше и собирай звездочки, они повысят
+                твою крутизну. Иногда с неба будут падать ящики с топливом, старайся ловить и их, чтобы пролететь дальше.
+                И не врежься в коварных птиц, что так и хотят помешать тебе. Удачи! Управление за счет стрелочек на
+                клавиатуре.
+            </p>
+        </div>
+        <div class="game-item__play">
+            <a class="game-item__play-btn" href="/samolet-the-game">Играть</a>
+        </div>
+    </article>
+
+    <article class="game-item">
+        <a class="game-item__image" href="/chelick-the-game">
+            <img src="/assets/previews/chelick-the-game.jpg" alt="game preview" loading="lazy">
+        </a>
+        <div class="game-item__body">
+            <h2 class="game-item__title">
+                Chelick
+            </h2>
+            <p class="game-item__description">
+                Как ты тут оказался? Неважно. Надо выбираться. Топай вперед и не забывай
+                перекусывать чем-нибудь на пути. Управление осуществляется за счет стрелочек на клавиатуре.
+            </p>
+        </div>
+        <div class="game-item__play">
+            <a class="game-item__play-btn" href="/chelick-the-game">Играть</a>
+        </div>
+    </article>
+
+    <article class="game-item">
+        <a class="game-item__image" href="/blaster-the-game">
+            <img src="/assets/previews/blaster-the-game.jpg" alt="game preview" loading="lazy">
+        </a>
+        <div class="game-item__body">
+            <h2 class="game-item__title">
+                Blaster
+            </h2>
+            <p class="game-item__description">
+                Просто уклоняйся от бластеров, продержись как можно больше и будь лидером среди других
+                игроков. Уворачивайся от бластеров с помощью клавиш w/a/s/d
+            </p>
+        </div>
+        <div class="game-item__play">
+            <a class="game-item__play-btn" href="/blaster-the-game">Играть</a>
+        </div>
+    </article>
+</div>
+
+</body>
+</html>

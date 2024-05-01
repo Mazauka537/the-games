@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>Flappy bird | THE GAMES</title>
+</head>
+
+<body>
+  <div class="screen" id="screen">
+    <div class="interface" id="interface">
+      <div class="death-flash" id="death-flash"></div>
+      <div class="score" id="scoreField">0</div>
+      <div class="dialog" id="startDialog">Tabs To Fly</div>
+      <div class="dialog" id="deathDialog" style="display: none">
+       <div class="title">
+         Game Over
+       </div>
+        <div class="state">
+          <div class="left">
+            <div class="medal-title">medal</div>
+            <div class="medal none" id="medal"></div>
+          </div>
+          <div class="right">
+            <div class="score-now">Score<br /> <span class="score-value" id="score-now"></span></div>
+            <div class="score-best">Best<br /><span class="score-value" id="score-best"></span></div>
+          </div>
+        </div>
+        <button class="button" id="death-dialog-btn"></button>
+      </div>
+    </div>
+    <div class="game">
+      <div class="layout" id="layout">
+      </div>
+      <div class="earth" id="earth"></div>
+    </div>
+  </div>
+  <script src="earthBlock.js" type="text/javascript" charset="utf-8"></script>
+  <script src="earth.js" type="text/javascript" charset="utf-8"></script>
+  <script src="pipe.js" type="text/javascript" charset="utf-8"></script>
+  <script src="upPipe.js" type="text/javascript" charset="utf-8"></script>
+  <script src="downPipe.js" type="text/javascript" charset="utf-8"></script>
+  <script src="pairPipes.js" type="text/javascript" charset="utf-8"></script>
+  <script src="bird.js" type="text/javascript" charset="utf-8"></script>
+  <script src="game.js" type="text/javascript" charset="utf-8"></script>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
